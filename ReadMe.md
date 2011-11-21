@@ -63,25 +63,25 @@ table{
 - abra o arquivo MMDocumentTypes.xml
 - procure pelo trecho:
 <pre>
-<documenttype id="CSS" internaltype="Text" winfileextension="css" macfileextension="css" file="Default.css" writebyteordermark="false">
-        <TITLE>
-                <MMString:loadString id="mmdocumenttypes_30" />
-        </TITLE>
-        <description>
-                <MMString:loadString id="mmdocumenttypes_31" />
-        </description>
-</documenttype>
+&lt;documenttype id="CSS" internaltype="Text" winfileextension="css" macfileextension="css" file="Default.css" writebyteordermark="false"&gt;
+        &lt;TITLE&gt;
+                &lt;MMString:loadString id="mmdocumenttypes_30" /&gt;
+        &lt;/TITLE&gt;
+        &lt;description&gt;
+                &lt;MMString:loadString id="mmdocumenttypes_31" /&gt;
+        &lt;/description&gt;
+&lt;/documenttype&gt;
 </pre>
 - inclua a extensão less juntamente com a extensão css, de forma que fique assim:
 <pre>
-<documenttype id="CSS" internaltype="Text" <b>winfileextension="css,less" macfileextension="css,less"</b> file="Default.css" writebyteordermark="false">
-        <TITLE>
-                <MMString:loadString id="mmdocumenttypes_30" />
-        </TITLE>
-        <description>
-                <MMString:loadString id="mmdocumenttypes_31" />
-        </description>
-</documenttype>
+&lt;documenttype id="CSS" internaltype="Text" <b>winfileextension="css,less" macfileextension="css,less"</b> file="Default.css" writebyteordermark="false"&gt;
+        &lt;TITLE&gt;
+                &lt;MMString:loadString id="mmdocumenttypes_30" /&gt;
+        &lt;/TITLE&gt;
+        &lt;description&gt;
+                &lt;MMString:loadString id="mmdocumenttypes_31" /&gt;
+        &lt;/description&gt;
+&lt;/documenttype&gt;
 </pre>
 
 ## License
