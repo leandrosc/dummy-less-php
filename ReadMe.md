@@ -38,7 +38,51 @@ Em seus arquivos <b>.less</b>, quando for utilizar o <b>@import</b> do <i>LessCS
             _formularios.less
             _geral.less
 </pre>
-Desta forma, será criado somente um arquivo estilos.css os demais o compilador irá ignorar
+Desta forma, será criado somente um arquivo estilos.css os demais o compilador irá ignorar. Ex.:
+<i>estilos.less</i>
+<pre>
+body{
+    p{
+        text-align: left;
+    }
+}
+@import "_formularios";
+@import "_geral";
+
+table{
+.
+.
+.
+
+</pre>
+
+## Alterando o Dreameaver para aceitar extenssões .less
+
+- Vá até a pasta onde você instalou seu Dreamweaver, ex: C:/Arquivos de programas/Adobe/Adobe Dreamweaver CS3/
+- entre na pasta configuration/DocumentTypes
+- abra o arquivo MMDocumentTypes.xml
+- procure pelo trecho:
+<pre>
+<documenttype id="CSS" internaltype="Text" winfileextension="css" macfileextension="css" file="Default.css" writebyteordermark="false">
+        <TITLE>
+                <MMString:loadString id="mmdocumenttypes_30" />
+        </TITLE>
+        <description>
+                <MMString:loadString id="mmdocumenttypes_31" />
+        </description>
+</documenttype>
+</pre>
+- inclua a extensão less juntamente com a extensão css, de forma que fique assim:
+<pre>
+<documenttype id="CSS" internaltype="Text" <b>winfileextension="css,less" macfileextension="css,less"</b> file="Default.css" writebyteordermark="false">
+        <TITLE>
+                <MMString:loadString id="mmdocumenttypes_30" />
+        </TITLE>
+        <description>
+                <MMString:loadString id="mmdocumenttypes_31" />
+        </description>
+</documenttype>
+</pre>
 
 ## License
 <pre>
