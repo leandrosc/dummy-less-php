@@ -1,0 +1,12 @@
+@box-shadow(@color:#000;@left:0px;@top:0px;@blur:0px) {
+  -moz-box-shadow: @left @top @blur @color;
+  -webkit-box-shadow: @left @top @blur @color;
+  -o-box-shadow: @left @top @blur @color;
+  box-shadow: @left @top @blur @color;
+}
+@box-shadow-inside(@color:#000;@left:0px;@top:0px;@blur:0px;@in_color:#000;@in_left:0px;@in_top:0px;@in_blur:0px;@in_dark:0px) {
+  -moz-box-shadow: @left @top @blur @color,@in_left @in_top @in_blur @in_color @in_dark inside;
+  -webkit-box-shadow: @left @top @blur @color,@in_left @in_top @in_blur @in_color @in_dark inside;
+  -o-box-shadow: @left @top @blur @color,@in_left @in_top @in_blur @in_color @in_dark inside;
+  box-shadow: @left @top @blur @color,@in_left @in_top @in_blur @in_color @in_dark inside;
+}

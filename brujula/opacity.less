@@ -1,0 +1,5 @@
+@opacity(@p:0) {
+    opacity: @p;
+    @p: @p * 100;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=@p);
+}
