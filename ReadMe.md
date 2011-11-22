@@ -5,7 +5,7 @@ Projeto simples para leigos ou designers que não querem entender muito de como 
 
 ## Instalação
 Basta baixar este repositorio ou clicar em Download e baixar tudo.
-
+Projeto original: http://leafo.net/lessphp/docs/
 
 ## Utilizado
 - Primeiramente você precisará de um servidor local em php, tipo... XAMPP, WAMPP, EasyPHP
